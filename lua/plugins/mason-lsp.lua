@@ -5,13 +5,10 @@ local opts = {
 		"efm",
 		"bashls",
 		"tsserver",
-		"solidity",
 		"tailwindcss",
-		"pyright",
 		"html",
 		"cssls",
 		"lua_ls",
-		"emmet_ls",
 		"jsonls",
 	},
 
