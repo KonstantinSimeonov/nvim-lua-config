@@ -16,7 +16,14 @@ opt.hlsearch = false
 
 -- Appearance
 opt.number = true
-opt.relativenumber = true
+
+-- explicitly setting this here
+-- since it's the most obnoxious thing to ever exist
+-- and needs to be entirely removed from existence with extreme
+-- prejudice and righteous fury (not to mention common sense)
+-- I don't have words to explain how much I hate this
+opt.relativenumber = false
+
 opt.termguicolors = false
 opt.signcolumn = "yes"
 opt.cmdheight = 1
