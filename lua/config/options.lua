@@ -29,6 +29,16 @@ opt.signcolumn = "yes"
 opt.cmdheight = 1
 opt.scrolloff = 10
 opt.completeopt = "menuone,noinsert,noselect"
+opt.ruler = true
+
+-- Render whitespace
+opt.list = true
+opt.listchars = {
+  tab = "→ ",
+  space = "·",
+  trail = "·",
+  extends = "»",
+}
 --vim.cmd 'colorscheme panda'
 
 -- Behaviour
