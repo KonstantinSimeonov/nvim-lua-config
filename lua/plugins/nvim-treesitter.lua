@@ -31,6 +31,7 @@ local config = function()
 			"vue",
 			"go",
 			"haskell",
+      "lua",
 		},
 		auto_install = true,
 		highlight = {
