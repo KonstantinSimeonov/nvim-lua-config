@@ -17,11 +17,12 @@ opt.hlsearch = false
 -- Appearance
 opt.number = true
 opt.relativenumber = true
-opt.termguicolors = true
+opt.termguicolors = false
 opt.signcolumn = "yes"
 opt.cmdheight = 1
 opt.scrolloff = 10
 opt.completeopt = "menuone,noinsert,noselect"
+--vim.cmd 'colorscheme panda'
 
 -- Behaviour
 opt.hidden = true

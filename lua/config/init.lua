@@ -8,6 +8,7 @@ if not vim.loop.fs_stat(lazypath) then
 		"--branch=stable", -- latest stable release
 		lazypath,
 	})
+
 end
 vim.opt.rtp:prepend(lazypath)
 
@@ -38,3 +39,6 @@ local opts = {
 }
 
 require("lazy").setup("plugins", opts)
+
+-- hacky, move elsewhere
+vim.cmd 'colorscheme panda'
