@@ -1,8 +1,8 @@
 -- COLORSCHEME
 
 return {
-	"markvincze/panda-vim",
-	lazy = false,
-	priority = 1000,
-	enabled = true,
+    "markvincze/panda-vim",
+    lazy = false,
+    priority = 1000,
+    enabled = true,
 }

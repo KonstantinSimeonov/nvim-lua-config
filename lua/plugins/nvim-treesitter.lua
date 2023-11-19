@@ -26,7 +26,6 @@ local config = function()
 			"lua",
 			"dockerfile",
 			"gitignore",
-			"go",
 			"haskell",
       "lua",
 		},
