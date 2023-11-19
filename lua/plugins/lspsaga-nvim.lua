@@ -15,7 +15,11 @@ return {
       finder = {
         keys = {
           toggle_or_open = "<CR>",
-        }
+          -- the defaults for those are trash
+          -- s for vpslit and i for split, U WOT M8
+          vsplit = "v",
+          split = "s",
+        },
       },
 
       -- get this icon trash outta here
