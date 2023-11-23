@@ -7,19 +7,29 @@ return {
         require("lspsaga").setup({
             -- keybinds for navigation in lspsaga window
             move_in_saga = { prev = "<C-k>", next = "<C-j>" },
-            -- use enter to open file with definition preview
-            definition_action_keys = {
-                edit = "<CR>",
-            },
 
             finder = {
+                left_width = 0.5,
+                right_width = 0.5,
+                layout = "normal",
                 keys = {
                     toggle_or_open = "<CR>",
+                    default = "ref",
                     -- the defaults for those are trash
                     -- s for vpslit and i for split, U WOT M8
                     vsplit = "v",
                     split = "s",
                 },
+            },
+
+            diagnostic = {
+              code_action_prompt = {
+                enable = false
+              },
+              show_code_action = false
+            },
+            lightbulb = {
+              enable = false
             },
 
             -- get this icon trash outta here
@@ -28,32 +38,6 @@ return {
                 devicon = false,
                 kind = {
                     Folder = { " " },
-                    File = { "" },
-                    Module = { "" },
-                    Namespace = { "" },
-                    Package = { "" },
-                    Class = { "" },
-                    Method = { "" },
-                    Property = { "" },
-                    Field = { "" },
-                    Constructor = { "" },
-                    Enum = { "" },
-                    Interface = { "" },
-                    Function = { "" },
-                    Variable = { "" },
-                    Constant = { "" },
-                    String = { "" },
-                    Number = { "" },
-                    Boolean = { "" },
-                    Array = { "" },
-                    Object = { "" },
-                    Key = { "" },
-                    Null = { "" },
-                    EnumMember = { "" },
-                    Struct = { "" },
-                    Event = { "" },
-                    Operator = { "" },
-                    TypeParameter = { "" },
                 },
             },
         })
