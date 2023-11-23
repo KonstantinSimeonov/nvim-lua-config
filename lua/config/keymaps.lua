@@ -1,13 +1,11 @@
-local mapkey = vim.keymap
-
 vim.g.mapleader = ","
 vim.g.maplocalleader = ","
 
--- Directory Navigatio}n
-mapkey.set("n", "<leader>e", ":NvimTreeFindFileToggle<CR>", { noremap = true, silent = true })
+-- open explorer
+vim.keymap.set("n", "<leader>e", ":NvimTreeFindFileToggle<CR>", { noremap = true, silent = true })
 
--- Indenting
-mapkey.set("v", "<", "<gv")
-mapkey.set("v", ">", ">gv")
+-- delete single character without copying into register
+vim.keymap.set("n", "x", '"_x')
 
-vim.keymap.set("n", "x", '"_x') -- delete single character without copying into register
+-- show errors and stuff
+vim.keymap.set("n", "<leader>l", vim.diagnostic.open_float)
