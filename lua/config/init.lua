@@ -41,4 +41,3 @@ require("lazy").setup("plugins", opts)
 
 -- hacky, move elsewhere
 vim.cmd("colorscheme panda")
-
