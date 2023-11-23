@@ -7,7 +7,11 @@ return {
     local mason = require("mason")
 
     local options = {
-      ensure_installed = { "stylua" },
+      ensure_installed = {
+        "stylua",
+        "prettierd",
+        "eslint_d"
+      },
       max_concurrent_installers = 10,
     }
 
