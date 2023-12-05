@@ -37,6 +37,11 @@ local config = function()
     },
   })
 
+  lspconfig.rust_analyzer.setup({
+    capabilities = capabilities,
+    on_attach = on_attach
+  })
+
   -- json
   lspconfig.jsonls.setup({
     capabilities = capabilities,
